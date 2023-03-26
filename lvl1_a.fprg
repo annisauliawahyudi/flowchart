@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PT.YUDHISTIRA GHALIA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 03:25:54 PM"/>
+        <attribute name="created" value="UFQuWVVESElTVElSQSBHSEFMSUE7UFBMRzEyMjA4OTAyLUNJOzIwMjMtMDMtMDc7MDM6MjE6MDUgUE07MzYxMA=="/>
+        <attribute name="edited" value="UFQuWVVESElTVElSQSBHSEFMSUE7UFBMRzEyMjA4OTAyLUNJOzIwMjMtMDMtMDc7MDM6MjU6NTQgUE07MTszNzI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <output expression="b" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

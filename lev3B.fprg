@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="IQBAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 01:38:50 PM"/>
+        <attribute name="created" value="SVFCQUw7REVTS1RPUC1EQTUxRUVMOzIwMjMtMDMtMDg7MDkuNTkuNDYgQU07MjY0OQ=="/>
+        <attribute name="edited" value="SVFCQUw7REVTS1RPUC1EQTUxRUVMOzIwMjMtMDMtMDg7MTEuMzQuMTkgQU07MTsyNzQz"/>
+        <attribute name="edited" value="UFQuWVVESElTVElSQSBHSEFMSUE7UFBMRzEyMjA4OTAyLUNJOzIwMjMtMDMtMjQ7MDE6Mzg6NTAgUE07MTszNzIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, mid" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&gt;b">
+                <then>
+                    <if expression="b&gt;c">
+                        <then>
+                            <assign variable="mid" expression="b"/>
+                        </then>
+                        <else>
+                            <if expression="a&gt;c">
+                                <then>
+                                    <assign variable="mid" expression="c"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="a"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="a&gt;c">
+                        <then>
+                            <assign variable="mid" expression="a"/>
+                        </then>
+                        <else>
+                            <if expression="b&gt;c">
+                                <then>
+                                    <assign variable="mid" expression="c"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="b"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Bilangan dengan nilai tengah: &quot;&amp;mid" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

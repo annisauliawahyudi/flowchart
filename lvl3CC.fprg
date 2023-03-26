@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PT.YUDHISTIRA GHALIA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 01:48:14 PM"/>
+        <attribute name="created" value="UFQuWVVESElTVElSQSBHSEFMSUE7UFBMRzEyMjA4OTAyLUNJOzIwMjMtMDMtMjQ7MDE6Mzk6MzcgUE07MzYyMQ=="/>
+        <attribute name="edited" value="UFQuWVVESElTVElSQSBHSEFMSUE7UFBMRzEyMjA4OTAyLUNJOzIwMjMtMDMtMjQ7MDE6NDg6MTQgUE07MTszNzI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a == 0 || b == 0 || c == 0">
+                <then>
+                    <output expression="&quot;tidak ada segitiga&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a=b&amp;&amp;b=c">
+                        <then>
+                            <output expression="&quot;segitiga sama sisi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a=b||a=c || b=c">
+                                <then>
+                                    <output expression="&quot;segitiga sama kaki&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Segitiga sembarang&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
